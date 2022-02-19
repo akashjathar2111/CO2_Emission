@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 from statsmodels.tsa.arima.model import ARIMA
 
-data = pd.read_csv(r"C:\Users\Shri Ganesha\Documents\Excelr_data\CO2 dataset.csv")
+data = pd.read_csv("CO2 dataset.csv")
 data = data.set_index(['Year'])
 
 st.header('Air Quality Forecasting CO2 emulation')
